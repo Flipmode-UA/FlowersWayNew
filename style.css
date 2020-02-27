@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:400,500,600&display=swap&subset=cyrillic');
+.material-icons.md-18 {font-size: 18px;}
 :root {
 	--headerColor: #061434;
 	--linkHoverColor:#1831aa;
@@ -82,9 +83,29 @@ header {
 .header_socials a {
 	height: 100%;
 	display: block;
-	margin: 0;
-	padding: 0 10px 0 20px;
+	margin-left: 20px;
+	/*padding-left: 20px;*/
+	width: 40px;
+	height: 40px;
 }
 .header_socials a:last-of-type {
 	padding-right: 0;
+}
+.header_socials a.viber {
+	background: url('img/viber_svg_icon.svg');
+}
+.header_socials a.viber:hover {
+	background: url(img/viber_hover.svg);
+}
+.header_socials a.facebook {
+	background: url('img/facebook_svg_icon.svg');
+}
+.header_socials a.facebook:hover {
+	background: url(img/facebook_hover.svg);
+}
+.header_socials a.instagram {
+	background: url('img/instagram_svg_icon.svg');
+}
+.header_socials a.instagram:hover {
+	background: url(img/instagram_hover.svg);
 }
