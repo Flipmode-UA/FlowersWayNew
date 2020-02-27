@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:400,500,600&display=swap&subset=cyrillic');
+:root {
+	--headerColor: #061434;
+	--linkHoverColor:#1831aa;
+	--titleFontSize: 1.1em;
+}
+body {
+	font-family: 'Montserrat', serif;
+	font-size: var(--titleFontSize);
+	font-weight: 500;
+	background-color: #fafbff;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.header_wrapper {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+header {
+	height: 100vh;
+	background: url('img/map-image@2x.png');
+	background-attachment: fixed;
+	background-position: contain;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header_inner_wrapper {
+	max-width: 1166px;
+	margin: 0 auto;
+}
+.top_header {
+	max-height: 40px;
+	padding-top: 35px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.logo, .header_socials {
+	width: 35%;
+}
+.main_navigation {
+	width: 30%;
+}
+.logo img {
+	height: 100%;
+}
+.main_navigation ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+.main_navigation ul {
+	list-style-type: none;
+	height: 100%;
+}
+.main_navigation a {
+	display: block;
+	height: 100%;
+	color: var(--headerColor);
+	text-decoration: none;
+	line-height: 40px;
+	cursor: pointer;
+}
+.main_navigation a:hover {
+	color: var(--linkHoverColor);
+	border-bottom: 2px solid var(--linkHoverColor);
+}
+.main_navigation a:active {
+	color: var(--headerColor);
+	border-bottom: 2px solid var(--headerColor);
+}
+.header_socials {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+
+}
+.header_socials a {
+	height: 100%;
+	display: block;
+	margin: 0;
+	padding: 0 10px 0 20px;
+}
+.header_socials a:last-of-type {
+	padding-right: 0;
+}
