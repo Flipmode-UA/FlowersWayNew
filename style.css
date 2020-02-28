@@ -84,7 +84,6 @@ header {
 	height: 100%;
 	display: block;
 	margin-left: 20px;
-	/*padding-left: 20px;*/
 	width: 40px;
 	height: 40px;
 }
@@ -95,17 +94,23 @@ header {
 	background: url('img/viber_svg_icon.svg');
 }
 .header_socials a.viber:hover {
-	background: url(img/viber_hover.svg);
+	background: url('img/viber_hover.svg');
 }
 .header_socials a.facebook {
 	background: url('img/facebook_svg_icon.svg');
 }
 .header_socials a.facebook:hover {
-	background: url(img/facebook_hover.svg);
+	background: url('img/facebook_hover.svg');
 }
 .header_socials a.instagram {
 	background: url('img/instagram_svg_icon.svg');
 }
 .header_socials a.instagram:hover {
-	background: url(img/instagram_hover.svg);
+	background: url('img/instagram_hover.svg');
+}
+.shopping_cart_icon {
+	display: block;
+	height: 20px;
+	width: 20px;
+	background: url('img/shop-icon.svg');
 }
