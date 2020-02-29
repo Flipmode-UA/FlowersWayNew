@@ -1,28 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:400,500,600&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap&subset=latin-ext');
 .material-icons.md-18 {font-size: 18px;}
 :root {
 	--headerColor: #061434;
-	--linkHoverColor:#1831aa;
+	--primaryTextColor: #040f2a;
+	--primaryColor: #1831aa;
+	--linkHoverColor: #1831aa;
+	--opacityTextColor: #296fdc;
+	--stickyTextColor: #ffffff;
 	--titleFontSize: 1.1em;
 }
 body {
 	font-family: 'Montserrat', serif;
 	font-size: var(--titleFontSize);
 	font-weight: 500;
-	background-color: #fafbff;
+	background-color: #ffffff;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	/*overflow: hidden;*/
+}
+.primarycolor {
+	color: var(--primaryColor);
 }
 .header_wrapper {
-	max-width: 1366px;
+	width: 1366px;
 	margin: 0 auto;
 }
 header {
 	height: 100vh;
 	background: url('img/map-image@2x.png');
 	background-attachment: fixed;
-	background-position: contain;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -32,7 +40,7 @@ header {
 }
 .top_header {
 	max-height: 40px;
-	padding-top: 35px;
+	padding: 30px 0;
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
@@ -59,6 +67,7 @@ header {
 	height: 100%;
 }
 .main_navigation a {
+	/*letter-spacing: 0.8px;*/
 	display: block;
 	height: 100%;
 	color: var(--headerColor);
@@ -91,26 +100,135 @@ header {
 	padding-right: 0;
 }
 .header_socials a.viber {
-	background: url('img/viber_svg_icon.svg');
+	background: url('img/viber_svg_icon.svg') no-repeat;
 }
 .header_socials a.viber:hover {
-	background: url('img/viber_hover.svg');
+	background: url('img/viber_hover.svg') no-repeat;
 }
 .header_socials a.facebook {
-	background: url('img/facebook_svg_icon.svg');
+	background: url('img/facebook_svg_icon.svg') no-repeat;
 }
 .header_socials a.facebook:hover {
-	background: url('img/facebook_hover.svg');
+	background: url('img/facebook_hover.svg') no-repeat;
 }
 .header_socials a.instagram {
-	background: url('img/instagram_svg_icon.svg');
+	background: url('img/instagram_svg_icon.svg') no-repeat;
 }
 .header_socials a.instagram:hover {
-	background: url('img/instagram_hover.svg');
+	background: url('img/instagram_hover.svg') no-repeat;
 }
 .shopping_cart_icon {
 	display: block;
 	height: 20px;
 	width: 20px;
 	background: url('img/shop-icon.svg');
+	background-size: cover;
+}
+
+/********* Middle Header Styling *********/
+
+.middle_header, .pages_section {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.left_header {
+	width: 66.66%;
+}
+.right_header {
+	width: 33.33%;
+}
+.middle_header {
+	margin-top: 35px;
+}
+h1.h1_header {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Archivo Black';
+	font-size: 135px;
+	line-height: 1.12;
+ 	letter-spacing: 5px;
+ 	position: relative;
+}
+h1.h1_header:before {
+	position: absolute;
+	content: 'Flowers Way';
+	font-size: 185px;
+	line-height: .95;
+ 	color: var(--opacityTextColor);
+ 	left: -100px;
+ 	top: -15px;
+ 	opacity: .08;
+ 	z-index: -1
+}
+.pages_section {
+	padding-top: 5vh;
+	justify-content: flex-start;
+}
+.guidebook_preview {
+	margin-left: 8%;
+}
+.middle_header h2 {
+	text-transform: uppercase;
+	color: var(--primaryTextColor);
+	font-size: 17px;
+	text-align: center;
+}
+.pages_section img {
+	height: 200px;
+	width: 250px;
+	border-radius: 10px;
+}
+.shop_preview img {
+	width: 320px;
+	height: 430px;
+	border-radius: 10px;
+}
+.blog_preview img, .guidebook_preview img, .shop_preview img {
+	box-shadow: 14px 25px 46px 0 rgba(9, 21, 85, 0.2);
+}
+.img_wrapper {
+	position: relative;
+}
+a.img_container {
+	display: block;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+a.sticky_link {
+	color: var(--stickyTextColor);
+	text-decoration: none;
+	display: block;
+	height: 100%;
+}
+.left_header .sticky {
+	position: absolute;
+	height: 50px;
+	width: 125px;
+	margin: 0;
+	padding: 0;
+	background-color: var(--primaryColor);
+	color: var(--stickyTextColor);
+	bottom: 0px;
+	right: 0px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 10px;
+}
+.right_header .img_wrapper {
+	width: 320px;
+}
+.right_header .sticky {
+	position: absolute;
+	height: 50px;
+	width: 285px;
+	margin: 0;
+	padding: 0;
+	background-color: var(--primaryColor);
+	color: var(--stickyTextColor);
+	bottom: 0px;
+	right: 0px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 10px;
 }
