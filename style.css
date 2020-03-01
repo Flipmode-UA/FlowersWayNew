@@ -8,7 +8,7 @@
 	--linkHoverColor: #1831aa;
 	--opacityTextColor: #296fdc;
 	--stickyTextColor: #ffffff;
-	--titleFontSize: 1.1em;
+	--titleFontSize: 17px;
 }
 body {
 	font-family: 'Montserrat', serif;
@@ -200,6 +200,12 @@ a.sticky_link {
 	text-decoration: none;
 	display: block;
 	height: 100%;
+	line-height: 50px;
+	padding: 0 15px;
+	text-align: center;
+}
+p.sticky {
+	box-shadow: 0 14px 24px 0 rgba(13, 26, 113, 0.25);
 }
 .left_header .sticky {
 	position: absolute;
@@ -231,4 +237,17 @@ a.sticky_link {
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 10px;
+}
+.sticky_link .material-icons {
+	vertical-align: middle;
+}
+.shopping_cart_icon {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.middle_header h3 {
+	text-align: center;
 }
